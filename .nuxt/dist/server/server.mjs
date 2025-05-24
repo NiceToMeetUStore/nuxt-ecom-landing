@@ -1,1 +1,0 @@
-export { default } from "file:///Users/pp/Documents/Work/GHub/nuxt-ecom-landing/node_modules/.pnpm/@nuxt+vite-builder@3.17.4_@types+node@22.15.21_magicast@0.3.5_rollup@4.41.1_terser@5.39.2_typ_vjzmin6r3xhoarysw2njjmblf4/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"
