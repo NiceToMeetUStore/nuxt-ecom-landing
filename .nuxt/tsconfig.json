@@ -42,7 +42,7 @@
         "../node_modules/@nuxt/schema"
       ],
       "nuxt": [
-        "../node_modules/nuxt"
+        "../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt"
       ],
       "vite/client": [
         "../node_modules/vite/client"
@@ -77,6 +77,9 @@
       "assets": [
         "../assets"
       ],
+      "assets/*": [
+        "../assets/*"
+      ],
       "public": [
         "../public"
       ],
@@ -84,25 +87,25 @@
         "../public/*"
       ],
       "#app": [
-        "../node_modules/nuxt/dist/app"
+        "../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app"
       ],
       "#app/*": [
-        "../node_modules/nuxt/dist/app/*"
+        "../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/*"
       ],
       "vue-demi": [
-        "../node_modules/nuxt/dist/app/compat/vue-demi"
+        "../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/compat/vue-demi"
       ],
       "#vue-router": [
-        "../node_modules/vue-router"
+        "../node_modules/.pnpm/vue-router@4.5.1_vue@3.5.14_typescript@5.8.3_/node_modules/vue-router"
       ],
       "#unhead/composables": [
-        "../node_modules/nuxt/dist/head/runtime/composables/v3"
+        "../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/head/runtime/composables/v3"
       ],
       "#imports": [
         "./imports"
       ],
       "#app-manifest": [
-        "./manifest/meta/963d9fe9-115e-441d-9ee9-64611effd0e8"
+        "./manifest/meta/dev"
       ],
       "#components": [
         "./components"
@@ -156,7 +159,7 @@
     "../dist",
     "../.data",
     "../node_modules",
-    "../node_modules/nuxt/node_modules",
+    "../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/node_modules",
     "../node_modules/@nuxt/devtools/node_modules",
     "../node_modules/@nuxt/telemetry/node_modules",
     "../node_modules/@nuxt/devtools/runtime/server",
