@@ -31,7 +31,7 @@
         </v-card>
 
 
-        <v-img src="/images/Ntmu2.jpg" width="508" height="657" />
+        <v-img src="/images/ntmu-front.JPG" width="508" height="657" />
 
     </div>
 
