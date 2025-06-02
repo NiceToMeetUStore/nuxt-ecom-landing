@@ -34,14 +34,14 @@
 const model = ref(null);
 const zone = ref([
     {
-        name: 'HYBRID',
-        Image: '/images/hybrid_resized.jpg',
-        description: "A balanced blend of Sativa and Indica, perfect for those seeking both relaxation and focus."
-    },
-    {
         name: 'INDICA',
         Image: '/images/indica_resized.jpg',
         description: "Deeply relaxing and calming—best for unwinding, stress relief, and restful sleep."
+    },
+    {
+        name: 'HYBRID',
+        Image: '/images/hybrid_resized.jpg',
+        description: "A balanced blend of Sativa and Indica, perfect for those seeking both relaxation and focus."
     },
     {
         name: 'SATIVA',
