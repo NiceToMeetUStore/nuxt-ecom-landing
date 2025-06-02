@@ -112,6 +112,7 @@ declare global {
   const useModel: typeof import('vue')['useModel']
   const useNuxtApp: typeof import('../../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/nuxt')['useNuxtApp']
   const useNuxtData: typeof import('../../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/composables/asyncData')['useNuxtData']
+  const useNuxtDevTools: typeof import('../../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools')['useNuxtDevTools']
   const usePreviewMode: typeof import('../../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/composables/preview')['usePreviewMode']
   const useRequestEvent: typeof import('../../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/composables/ssr')['useRequestEvent']
   const useRequestFetch: typeof import('../../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/composables/ssr')['useRequestFetch']
@@ -292,6 +293,7 @@ declare module 'vue' {
     readonly useModel: UnwrapRef<typeof import('vue')['useModel']>
     readonly useNuxtApp: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/nuxt')['useNuxtApp']>
     readonly useNuxtData: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/composables/asyncData')['useNuxtData']>
+    readonly useNuxtDevTools: UnwrapRef<typeof import('../../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools')['useNuxtDevTools']>
     readonly usePreviewMode: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/composables/preview')['usePreviewMode']>
     readonly useRequestEvent: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/composables/ssr')['useRequestEvent']>
     readonly useRequestFetch: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/composables/ssr')['useRequestFetch']>

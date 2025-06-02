@@ -12,7 +12,15 @@ type HydrationStrategies = {
 }
 type LazyComponent<T> = (T & DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }>)
 interface _GlobalComponents {
-      'NuxtWelcome': typeof import("../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/components/welcome.vue")['default']
+      'CommonWarningModal': typeof import("../components/common/warningModal.vue")['default']
+    'LayoutsFooter': typeof import("../components/layouts/footer.vue")['default']
+    'LayoutsHeader': typeof import("../components/layouts/header.vue")['default']
+    'PagesContract': typeof import("../components/pages/contract.vue")['default']
+    'PagesInfo': typeof import("../components/pages/info.vue")['default']
+    'PagesProduct': typeof import("../components/pages/product.vue")['default']
+    'PagesReview': typeof import("../components/pages/review.vue")['default']
+    'PagesZone': typeof import("../components/pages/zone.vue")['default']
+    'NuxtWelcome': typeof import("../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/components/welcome.vue")['default']
     'NuxtLayout': typeof import("../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/components/nuxt-layout")['default']
     'NuxtErrorBoundary': typeof import("../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
     'ClientOnly': typeof import("../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/components/client-only")['default']
@@ -36,7 +44,15 @@ interface _GlobalComponents {
     'Body': typeof import("../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/head/runtime/components")['Body']
     'NuxtIsland': typeof import("../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/components/server-placeholder")['default']>
-      'LazyNuxtWelcome': LazyComponent<typeof import("../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/components/welcome.vue")['default']>
+      'LazyCommonWarningModal': LazyComponent<typeof import("../components/common/warningModal.vue")['default']>
+    'LazyLayoutsFooter': LazyComponent<typeof import("../components/layouts/footer.vue")['default']>
+    'LazyLayoutsHeader': LazyComponent<typeof import("../components/layouts/header.vue")['default']>
+    'LazyPagesContract': LazyComponent<typeof import("../components/pages/contract.vue")['default']>
+    'LazyPagesInfo': LazyComponent<typeof import("../components/pages/info.vue")['default']>
+    'LazyPagesProduct': LazyComponent<typeof import("../components/pages/product.vue")['default']>
+    'LazyPagesReview': LazyComponent<typeof import("../components/pages/review.vue")['default']>
+    'LazyPagesZone': LazyComponent<typeof import("../components/pages/zone.vue")['default']>
+    'LazyNuxtWelcome': LazyComponent<typeof import("../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/components/welcome.vue")['default']>
     'LazyNuxtLayout': LazyComponent<typeof import("../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
     'LazyNuxtErrorBoundary': LazyComponent<typeof import("../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>
     'LazyClientOnly': LazyComponent<typeof import("../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/components/client-only")['default']>
@@ -66,6 +82,14 @@ declare module 'vue' {
   export interface GlobalComponents extends _GlobalComponents { }
 }
 
+export const CommonWarningModal: typeof import("../components/common/warningModal.vue")['default']
+export const LayoutsFooter: typeof import("../components/layouts/footer.vue")['default']
+export const LayoutsHeader: typeof import("../components/layouts/header.vue")['default']
+export const PagesContract: typeof import("../components/pages/contract.vue")['default']
+export const PagesInfo: typeof import("../components/pages/info.vue")['default']
+export const PagesProduct: typeof import("../components/pages/product.vue")['default']
+export const PagesReview: typeof import("../components/pages/review.vue")['default']
+export const PagesZone: typeof import("../components/pages/zone.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/components/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/components/nuxt-layout")['default']
 export const NuxtErrorBoundary: typeof import("../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -90,6 +114,14 @@ export const Html: typeof import("../node_modules/.pnpm/nuxt@3.17.4_@parcel+watc
 export const Body: typeof import("../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtIsland: typeof import("../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/components/server-placeholder")['default']>
+export const LazyCommonWarningModal: LazyComponent<typeof import("../components/common/warningModal.vue")['default']>
+export const LazyLayoutsFooter: LazyComponent<typeof import("../components/layouts/footer.vue")['default']>
+export const LazyLayoutsHeader: LazyComponent<typeof import("../components/layouts/header.vue")['default']>
+export const LazyPagesContract: LazyComponent<typeof import("../components/pages/contract.vue")['default']>
+export const LazyPagesInfo: LazyComponent<typeof import("../components/pages/info.vue")['default']>
+export const LazyPagesProduct: LazyComponent<typeof import("../components/pages/product.vue")['default']>
+export const LazyPagesReview: LazyComponent<typeof import("../components/pages/review.vue")['default']>
+export const LazyPagesZone: LazyComponent<typeof import("../components/pages/zone.vue")['default']>
 export const LazyNuxtWelcome: LazyComponent<typeof import("../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/components/welcome.vue")['default']>
 export const LazyNuxtLayout: LazyComponent<typeof import("../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
 export const LazyNuxtErrorBoundary: LazyComponent<typeof import("../node_modules/.pnpm/nuxt@3.17.4_@parcel+watcher@2.5.1_@types+node@22.15.21_db0@0.3.2_ioredis@5.6.1_lightningcss@1_3yb5plev6orbwxx63burgakjou/node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>
