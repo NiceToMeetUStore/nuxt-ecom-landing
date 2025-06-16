@@ -1,15 +1,15 @@
 <template>
+  <v-container class="px-1 px-sm-8 px-md-10 px-lg-12" fluid>
+    <pages-info />
 
-  <pages-info />
+    <pages-zone />
 
-  <pages-zone />
+    <pages-product />
 
-  <pages-product />
+    <pages-review />
 
-  <pages-review />
-
-  <pages-contract />
-
+    <pages-contract />
+  </v-container>
 </template>
 
 <script setup lang="ts">
@@ -19,7 +19,7 @@ definePageMeta({ layout: 'default' });
 </script>
 
 <style>
-.cardzone {
+/* .cardzone {
   margin: 12px;
   border-radius: 16px;
   overflow: hidden;
@@ -27,5 +27,5 @@ definePageMeta({ layout: 'default' });
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-}
+} */
 </style>

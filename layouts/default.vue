@@ -2,13 +2,14 @@
     <div class="layout-container">
         <!-- Navbar -->
         <layouts-header />
-        <!-- Main content (page content will be injected here) -->
+        <!-- Main content -->
         <main class="main-content">
             <slot />
         </main>
         <!-- Footer -->
         <layouts-footer />
     </div>
+
     <template>
         <div class="text-center pa-10">
             <v-dialog v-model="dialog" max-width="400" persistent>
@@ -51,29 +52,37 @@
             </v-dialog>
         </div>
     </template>
-
 </template>
 
-
-
 <script setup lang="ts">
-
 /* #### Composables #### */
 
-
-// /* #### State #### */
+/* #### State #### */
 const dialog = ref<boolean>(true);
 
-
 /* #### Methods #### */
-
 
 </script>
 
 
 <style scoped>
 .main-content {
-    padding-top: 120px;
     flex: 1;
+    padding-top: 80px;
+    /* default for mobile */
+}
+
+@media (min-width: 600px) {
+    .main-content {
+        padding-top: 80px;
+        /* tablet */
+    }
+}
+
+@media (min-width: 960px) {
+    .main-content {
+        padding-top: 100px;
+        /* desktop */
+    }
 }
 </style>
