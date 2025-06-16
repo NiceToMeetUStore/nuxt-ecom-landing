@@ -35,7 +35,7 @@
                     </v-card-text>
                 </v-card>
             </v-col>
-            <v-col cols="12" sm="6" md="6" lg="6" class="d-flex justify-end">
+            <v-col cols="12" sm="6" md="6" lg="6" class="d-flex justify-center justify-md-end">
                 <v-img src="/images/contact-1.JPG" :max-width="imgSize" :max-height="imgSize" class="mt-2" />
             </v-col>
         </v-row>

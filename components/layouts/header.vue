@@ -1,7 +1,7 @@
 <template>
     <div>
         <v-layout>
-            <v-app-bar :height="appBarHeight" app>
+            <v-app-bar :height="appBarHeight">
                 <div class="logo-container">
                     <img src="/images/nice_logo.png" alt="Logo" :style="{ height: logoHeight + 'px' }" />
                 </div>
