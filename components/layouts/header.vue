@@ -9,8 +9,8 @@
                 <div class="d-flex align-center ml-auto">
                     <!-- Desktop Menu -->
                     <div class="d-none d-md-flex align-center mr-2">
-                        <v-btn text @click="goTo('about')">About</v-btn>
-                        <v-btn text @click="goTo('contact')">Contact Us</v-btn>
+                        <v-btn class="btn-hover-green" text @click="goTo('about')">About</v-btn>
+                        <v-btn class="btn-hover-green" text @click="goTo('contact')">Contact Us</v-btn>
                     </div>
 
                     <!-- Mobile: Hamburger Menu -->
@@ -105,29 +105,47 @@ const toggleLang = () => {
         8px 8px 0px #00FF88;
 }
 
-a {
-    box-shadow: inset 0 0 0 0 #006838;
-    color: #006838;
-    padding: 0 .25rem;
-    margin: 0 -.25rem;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+.btn-hover-green {
+    /* position: relative;
+    overflow: hidden;
+    color: inherit; */
+    transition: color 0.3s ease;
 }
 
-a:hover {
-    color: #fff;
-    box-shadow: inset 200px 0 0 0 #006838;
-    ;
+.btn-hover-green::before {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 0;
+    background-color: #006838;
+    border-radius: 4px;
+    z-index: 0;
+    transition: width 0.3s ease;
 }
 
-/* Presentational styles */
-a {
-    color: #006838;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.5;
-    text-decoration: none;
+.btn-hover-green:hover::before {
+    width: 100%;
 }
+
+.btn-hover-green:hover {
+    color: white !important;
+}
+
+.btn-hover-green>* {
+    position: relative;
+    z-index: 1;
+}
+
+/* .v-btn .v-btn__content {
+    position: relative;
+    z-index: 1;
+    color: white !important;
+    transition: color 0.3s ease;
+}
+
+.v-btn:hover .v-btn__content {
+    color: white !important;
+} */
 
 /* .navbar {
     position: fixed;
