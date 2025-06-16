@@ -8,7 +8,7 @@
 
     <pages-review />
 
-    <pages-contract />
+    <pages-contact />
   </v-container>
 </template>
 

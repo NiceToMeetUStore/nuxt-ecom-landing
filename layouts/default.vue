@@ -11,7 +11,7 @@
     </div>
 
     <template>
-        <div class="text-center pa-10">
+        <div>
             <v-dialog v-model="dialog" max-width="400" persistent>
 
                 <v-card style="border-radius: 15px;">

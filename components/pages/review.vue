@@ -10,8 +10,7 @@
         <v-col cols="12" class="d-flex justify-center">
             <v-slide-group v-model="model" show-arrows>
                 <v-slide-group-item v-for="n in reviews" :key="n.name">
-                    <v-card flat class="cardreview px-2" :width="cardSize" :height="cardHeight"
-                        style="border-radius: 12px; border: 1px solid #e0e0e0">
+                    <v-card flat class="cardreview px-2" :width="cardSize" :height="cardHeight">
                         <div class="text-subtitle-2 text-md-h6 font-italic text-center">
                             “{{ n.review }}”
                         </div>
@@ -95,13 +94,13 @@ const reviews = ref([
 <style>
 .cardreview {
     margin: 12px;
-    border-radius: 16px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 14px;
 }
 </style>

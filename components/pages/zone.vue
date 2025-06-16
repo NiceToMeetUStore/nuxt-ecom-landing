@@ -78,17 +78,17 @@ const model = ref(null);
 const zone = ref([
     {
         name: 'Chill Space',
-        Image: '/images/DSC09480.jpg',
+        Image: '/images/slide-1-1.jpg',
         description: "Environment designed for comfort and vibrant displays create the perfect vibe for relaxation."
     },
     {
         name: 'Board Games',
-        Image: '/images/DSC09332_1.jpg',
+        Image: '/images/slide-1-2.jpg',
         description: "Connect with friends over classic and modern board games. It’s more than a store—it’s your new favorite hangout."
     },
     {
         name: 'Live Music',
-        Image: '/images/DSC09683.jpg',
+        Image: '/images/slide-1-3.jpg',
         description: "Enjoy live music. From acoustic sets to energetic local acts, there's always a rhythm in the air."
     },
     {

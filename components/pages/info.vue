@@ -39,8 +39,8 @@ const carouselHeight = computed(() => {
 })
 
 const slides = ref([
-    { src: '/images/IMG_20250405_124916_edit_78422252671540.jpg' },
-    { src: '/images/IMG_20250511_1707221.jpg' },
+    { src: '/images/carousel-1.jpg' },
+    { src: '/images/carousel-2.jpg' },
 ])
 </script>
 

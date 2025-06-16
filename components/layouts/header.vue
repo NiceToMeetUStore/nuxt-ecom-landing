@@ -8,21 +8,9 @@
 
                 <div class="d-flex align-center ml-auto">
                     <!-- Desktop Menu -->
-                    <div class="d-none d-md-flex align-center gap-2">
+                    <div class="d-none d-md-flex align-center mr-2">
                         <v-btn text @click="goTo('about')">About</v-btn>
                         <v-btn text @click="goTo('contact')">Contact Us</v-btn>
-
-                        <v-menu offset-y open-on-hover>
-                            <template v-slot:activator="{ props }">
-                                <v-btn :text="currentLang" append-icon="mdi-chevron-down" v-bind="props"
-                                    variant="outlined" class="lang-btn mr-8" />
-                            </template>
-                            <v-list>
-                                <v-list-item v-for="lang in langs" :key="lang" @click="currentLang = lang">
-                                    <v-list-item-title>{{ lang }}</v-list-item-title>
-                                </v-list-item>
-                            </v-list>
-                        </v-menu>
                     </div>
 
                     <!-- Mobile: Hamburger Menu -->
@@ -34,19 +22,17 @@
                         <v-list>
                             <v-list-item @click="goTo('about')">About</v-list-item>
                             <v-list-item @click="goTo('contact')">Contact</v-list-item>
-                            <v-list-item @click="toggleLang">
-                                <v-menu offset-y>
-                                    <template v-slot:activator="{ props }">
-                                        <v-btn :text="currentLang" append-icon="mdi-chevron-down" v-bind="props"
-                                            variant="outlined" class="lang-btn" />
-                                    </template>
+                        </v-list>
+                    </v-menu>
 
-                                    <v-list>
-                                        <v-list-item v-for="lang in langs" :key="lang" @click="currentLang = lang">
-                                            <v-list-item-title>{{ lang }}</v-list-item-title>
-                                        </v-list-item>
-                                    </v-list>
-                                </v-menu>
+                    <v-menu offset-y open-on-hover>
+                        <template v-slot:activator="{ props }">
+                            <v-btn :text="currentLang" append-icon="mdi-chevron-down" v-bind="props" variant="outlined"
+                                class="lang-btn mr-8" height="30" width="30" />
+                        </template>
+                        <v-list>
+                            <v-list-item v-for="lang in langs" :key="lang" @click="currentLang = lang">
+                                <v-list-item-title>{{ lang }}</v-list-item-title>
                             </v-list-item>
                         </v-list>
                     </v-menu>
@@ -151,9 +137,9 @@ a {
     background-color: white;
     padding: 10px;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)
-}
+} */
 
-.navbar img {
+/* .navbar img {
     width: 80px;
     height: 80px;
 } */
